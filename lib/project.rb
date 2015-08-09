@@ -12,5 +12,6 @@ attr_accessor :title
 
   def add_backer(backer)
     BACKERS << backer
+    backer.backed_projects << self
   end
 end

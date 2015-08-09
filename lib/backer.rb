@@ -10,12 +10,14 @@ attr_accessor :name
 
   def back_project(project)
     BACKED_PROJECTS << project
+    project.backers << self
+    
   end
 
   def backed_projects
     BACKED_PROJECTS
-      
-    
 	end
+
+
 	
 end
